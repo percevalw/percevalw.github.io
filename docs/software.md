@@ -50,10 +50,10 @@ Below are several open-source projects I have architected and actively lead as p
 
 Here are some personal side projects I have developed in my spare time or as part of my PhD thesis.
 
-=== card
+=== card {: .new }
     ⚛️ [**Pret**](https://github.com/percevalw/pret) [![GitHub stars](https://img.shields.io/github/stars/percevalw/pret?style=social)](https://github.com/percevalw/pret)
     ---
-     Library for building full-stack reactive user interfaces in Python, using React as a rendering engine.
+     Library for building full-stack reactive user interfaces in Python, using React as a rendering engine. This project is under active development and likely not ready yet for production use.
 
 === card
     🏷️ [**Metanno**](https://github.com/percevalw/metanno) [![GitHub stars](https://img.shields.io/github/stars/percevalw/metanno?style=social)](https://github.com/percevalw/metanno)

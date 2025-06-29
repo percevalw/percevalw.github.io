@@ -34,12 +34,6 @@ title: cd ~/percevalw/talks
 
 ---
 
-**Algorithme de pseudonymisation des comptes-rendus cliniques**   
-:fontawesome-regular-calendar: **2024-06-17** • :fontawesome-solid-location-dot: [Bernoulli Lab](https://www.bernoulli-lab.fr/) (Online)   
-[Slides](/assets/files/2024-06-17_bernoulli-lab.pdf){ .button-link .purple-button }
-
----
-
 **Séminaire IA de l'AP-HP: Introduction à l'IA**   
 :fontawesome-regular-calendar: **2024-10-18** • :fontawesome-solid-location-dot: [AP-HP](https://aphp.fr) @ [Siège de l'AP-HP](https://maps.app.goo.gl/6NU9YdjpuuqsEYfz6)   
 [Recap](https://cme.aphp.fr/sites/default/files/CMEDoc/cme5novembre2024_ia_seminaire.pdf){ .button-link .blue-button } • [Recording](https://www.youtube.com/playlist?list=PLcMM5jv7Zmd8wreY3m3iVY_-ZMOhF6hB7){ .button-link .red-button }
@@ -48,6 +42,18 @@ title: cd ~/percevalw/talks
 
 **Accélération des traitements NLP avec EDS-NLP**   
 :fontawesome-regular-calendar: **2024-10-17** • :fontawesome-solid-location-dot: *[Haute Autorité de Santé (HAS)](https://www.has-sante.fr/)*   
+
+---
+
+**Algorithme de pseudonymisation des comptes-rendus cliniques**   
+:fontawesome-regular-calendar: **2024-06-17** • :fontawesome-solid-location-dot: [Bernoulli Lab](https://www.bernoulli-lab.fr/) (Online)   
+[Slides](/assets/files/2024-06-17_bernoulli-lab.pdf){ .button-link .purple-button }
+
+---
+
+**Audition pour la mission sur l'IA et la santé menée par la délégation à la prospective du Sénat**   
+:fontawesome-regular-calendar: **2024-03-12** • :fontawesome-solid-location-dot: [Sénat](https://www.senat.fr/)   
+[Final report](https://www.senat.fr/rap/r23-611/r23-61114.html){ .button-link .blue-button }
 
 ---
 
@@ -85,12 +91,14 @@ title: cd ~/percevalw/talks
 
 ## 2022
 
+**Analyser des millions de documents cliniques: développement et utilisation d’algorithmes de traitement automatique du langage dans le cadre d’un entrepôt de données de santé**   
+:fontawesome-regular-calendar: **2022-11-23** • :fontawesome-solid-location-dot: [Bernoulli Lab](https://www.bernoulli-lab.fr/) (Online)
+
+---
+
 **Extraction d'Entités Structurées dans les Compte-Rendus d’Imagerie Mammaire**   
 :fontawesome-regular-calendar: **2022-06-20** • :fontawesome-solid-location-dot: [Healthcare NLP Meet-up](https://posos.org/) @ [PariSanté Campus](https://parisantecampus.fr/)   
 [Event](https://www.eventbrite.com/e/billets-healthcare-nlp-meet-up-338984320227){ .button-link .blue-button }
-
-**Analyser des millions de documents cliniques: développement et utilisation d’algorithmes de traitement automatique du langage dans le cadre d’un entrepôt de données de santé**   
-:fontawesome-regular-calendar: **2022-11-23** • :fontawesome-solid-location-dot: [Bernoulli Lab](https://www.bernoulli-lab.fr/) (Online)
 
 ---
 
@@ -125,6 +133,7 @@ title: cd ~/percevalw/talks
 :fontawesome-regular-calendar: **2020-06-08** • :fontawesome-solid-location-dot: [DEFT Workshop at JEP-TALN-RECITAL 2020](https://jep-taln2020.loria.fr/conference-virtuelle/articles/articles-deft/) (Online)   
 [Event](https://jep-taln2020.loria.fr/conference-virtuelle/articles/articles-deft/){ .button-link .blue-button } • [Slides](/assets/files/2020-06-08_deft.pdf){ .button-link .purple-button }
 
+---
 
 ## 2019
 

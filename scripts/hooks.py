@@ -13,15 +13,23 @@ def on_post_page(output_content: str, *, page, config, **kwargs) -> str:
     site_host = urlparse(site_url).netloc if site_url else ""
 
     for tag in soup.find_all("a", href=True):
+        target_blank = False
         href = tag["href"]
 
-        if href.startswith(("http://", "https://")):
+        if href.endswith(".pdf"):
+            target_blank = True
+        elif href.startswith(("http://", "https://")):
             if site_host and urlparse(href).netloc == site_host:
                 continue
 
-            tag["target"] = "_blank"
-            existing_rel = set(tag.get("rel", []))
-            existing_rel.update({"noopener", "noreferrer"})
-            tag["rel"] = " ".join(sorted(existing_rel))
+            target_blank = True
+
+        if not target_blank:
+            continue
+
+        tag["target"] = "_blank"
+        existing_rel = set(tag.get("rel", []))
+        existing_rel.update({"noopener", "noreferrer"})
+        tag["rel"] = " ".join(sorted(existing_rel))
 
     return str(soup)
