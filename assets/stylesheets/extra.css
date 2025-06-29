@@ -245,6 +245,10 @@ a.discrete-link {
     contain: paint;
 }
 
+.card-content {
+    position: relative;
+}
+
 .card-content > h2 > a > img {
     float: right;
     vertical-align: middle;
@@ -287,4 +291,19 @@ a.button-link.red-button {
 
 .md-header span.md-ellipsis {
     font-family: Inconsolata, Roboto Mono, Roboto, sans-serif;
+}
+
+.new:after {
+    display: block;
+    content: "New !";
+    position: absolute;
+    top: -11px;
+    left: -14px;
+    background: #2196F3;
+    box-shadow: #000 0 0 5px;
+    font-weight: bold;
+    color: white;
+    transform: rotate(-32deg);
+    transform-origin: center;
+    padding: 0.25em 0.75em;
 }
