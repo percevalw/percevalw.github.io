@@ -1,0 +1,89 @@
+site_name: cd ~/percevalw
+site_url: https://percevalw.github.io
+nav:
+  - Home: index.md
+  - Software: software.md
+  - Publications: publications.md
+  - Talks: talks.md
+  - Job Offers: job-offers.md
+theme:
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
+    - navigation.instant
+    - navigation.indexes
+    - navigation.footer
+    - content.code.annotate
+    - content.code.copy
+    - announce.dismiss
+extra_css:
+  - assets/stylesheets/extra.css
+watch:
+  - scripts
+hooks:
+  - scripts/hooks.py
+plugins:
+  - cards
+  - fix_fonts
+  - search
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
+  - autorefs:
+      priority:
+        - .*
+        - reference
+  # - pret_snippet_renderer
+  - mkdocstrings_options_templates
+  - mkdocstrings:
+      enable_inventory: true
+      handlers:
+        python:
+          options:
+            docstring_style: numpy
+            docstring_section_style: spacy
+            heading_level: 2
+            members_order: source
+            show_root_toc_entry: false
+            show_signature: false
+            merge_init_into_class: true
+  - bibtex:
+      bibtex_file: "docs/references.bib"
+  - clickable_code
+  - mike
+markdown_extensions:
+  - pymdownx.highlight
+  - admonition
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - footnotes
+  - md_in_html
+  - attr_list
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
