@@ -11,6 +11,12 @@ title: cd ~/percevalw/talks
 
 ## 2025
 
+**Round Table: Deploying AI in hospitals**   
+:fontawesome-regular-calendar: **2025-06-30** • :fontawesome-solid-location-dot: *[AI4Health Summer School](https://www.aphp.fr/hopital-europeen-georges-pompidou-hegp)* @ [Institut Necker (Université Paris Cité)](https://maps.app.goo.gl/4DDr4PUFVtfwdkBUA)   
+[Event](https://www.ai4healthschool.org/wp-content/uploads/2025/06/HDH-A4-SUMMER-SCHOOL-2025.pdf){ .button-link .blue-button }
+
+---
+
 **L'Intelligence Artificielle : comprendre son fonctionnement et ses enjeux pour mieux agir**       
 :fontawesome-regular-calendar: **2025-04-08** • :fontawesome-solid-location-dot: *[École de Management des Médecins Hospitaliers (EMAMH)](https://cfdc.aphp.fr/lecole-de-management-des-medecins-hospitaliers-emamh-lance-son-appel-a-candidatures-pour-la-promotion-2024-2025/)* 
 
