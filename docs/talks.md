@@ -11,6 +11,12 @@ title: cd ~/percevalw/talks
 
 ## 2025
 
+**Causal Inference & Multi-Modal AI for Precision Health: Efficient NLP for Clinical Data Warehouses**   
+:fontawesome-regular-calendar: **2025-07-03** • :fontawesome-solid-location-dot: *[AI4Health Summer School](https://www.aphp.fr/hopital-europeen-georges-pompidou-hegp)* @ [Owkin](https://www.owkin.com/)   
+[Event](https://www.ai4healthschool.org/schedule/){ .button-link .blue-button } • [Slides](/assets/files/2025-07-03_owkin.pdf){ .button-link .purple-button }
+
+---
+
 **Round Table: Deploying AI in hospitals**   
 :fontawesome-regular-calendar: **2025-06-30** • :fontawesome-solid-location-dot: *[AI4Health Summer School](https://www.aphp.fr/hopital-europeen-georges-pompidou-hegp)* @ [Institut Necker (Université Paris Cité)](https://maps.app.goo.gl/4DDr4PUFVtfwdkBUA)   
 [Event](https://www.ai4healthschool.org/wp-content/uploads/2025/06/HDH-A4-SUMMER-SCHOOL-2025.pdf){ .button-link .blue-button }
