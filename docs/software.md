@@ -72,6 +72,11 @@ Here are some personal side projects I have developed in my spare time or as par
     A decompiler for Python 3, converting compiled bytecode back into readable Python source code.
 
 === card
+    ⛶ [**ReactSimpleDock**](https://github.com/percevalw/react-simple-dock/) [![GitHub stars](https://img.shields.io/github/stars/percevalw/react-simple-dock?style=social)](https://github.com/percevalw/react-simple-dock)
+    ---
+    A set of React components to create a dockable interface, allowing to arrange and resize tabs.
+
+=== card
     🏗️ [**NLStruct**](https://github.com/percevalw/nlstruct) [![GitHub stars](https://img.shields.io/github/stars/percevalw/nlstruct?style=social)](https://github.com/percevalw/nlstruct)
     ---
     (Archived) A library for building structured prediction models in NLP, developed as part of my PhD thesis. It focuses on named entity recognition and entity attribute extraction. I now focus my efforts on EDS-NLP.
