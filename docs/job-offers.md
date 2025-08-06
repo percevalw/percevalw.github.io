@@ -9,7 +9,7 @@ Au sein de l'Équipe Science des Données de la DSN, vous développerez, valider
 
 Plus d'info sur l'[offre ici](https://www.welcometothejungle.com/fr/companies/aphp/jobs/data-scientist-specialise-en-dev-logiciel-f-h_paris).
 
-<details>
+<details markdown>
 <summary>Archived offers</summary>
 
 ## Data Scientist / ML Engineer en apprentissage à l'AP-HP
