@@ -1,24 +1,6 @@
 """
-MkDocs event‑hooks plugin
-========================
-
-Module name: **scripts.generate_publications**
-
-This extremely lightweight plugin runs at MkDocs *build* time and
-(re)generates a Markdown page `publications.md` from a BibTeX file
-`references.bib`, using MkDocs‑Material *cards* syntax.
-
-*No packaging, no entry‑points* – just drop this file in `scripts/`
-and reference the module path in `mkdocs.yml`.
-
-Usage (mkdocs.yml)
-------------------
-
-```yaml
-plugins:
-  - search
-  - scripts.generate_publications  # ← this plugin
-```
+To update the publications list, edit the references.bib file and run
+`python scripts/generate_publications.py` at the root of the website
 """
 
 from __future__ import annotations
@@ -29,20 +11,17 @@ from pathlib import Path
 
 import mkdocs.config
 import mkdocs.structure.files
-import mkdocs.structure.pages  # for type hints
+import mkdocs.structure.pages
 
 log = logging.getLogger("generate_publications")
 
 
-# ──────────────────────────────────────────────────────────────────────────
-# Core: build the Markdown page
-# ──────────────────────────────────────────────────────────────────────────
 def _build_publications(bib_path: Path) -> str:
     """
-    Parse *bib_path* and write a cards page to *output_path*.
+    Parse bib_path and return the content of the markdown file with the list of publications
     """
     if not bib_path.is_file():
-        log.warning("BibTeX file %s not found – skipping page generation", bib_path)
+        log.warning("BibTeX file %s not found: skipping page generation", bib_path)
         return ""
 
     entries: list[dict] = []
@@ -74,7 +53,6 @@ def _build_publications(bib_path: Path) -> str:
                         value = value.strip().strip(",").strip('{}"')
                         entry["fields"][name.lower()] = value
 
-    # Build Markdown with Material cards
     lines = ["# Publications", ""]
 
     MONTH_NAMES = {
@@ -210,56 +188,9 @@ def _build_publications(bib_path: Path) -> str:
     return markdown
 
 
-# Virtual files registry  (src_path -> markdown content)
-VIRTUAL_FILES: dict[str, str] = {}
-
-
-# ──────────────────────────────────────────────────────────────────────────
-# MkDocs event hooks for virtual publications page
-# ──────────────────────────────────────────────────────────────────────────
-
-
-def on_files(
-    files: mkdocs.structure.files.Files,
-    config: mkdocs.config.Config,
-):
-    """
-    Add a *virtual* publications.md page to MkDocs' file list.
-    """
-    docs_dir = Path(config["docs_dir"])
-    bib_path = docs_dir / "references.bib"
-    content = _build_publications(bib_path)
-    with open("publications.md", "w") as f:
-        f.write(content)
-    VIRTUAL_FILES["publications.md"] = content
-
-    # Create an in‑memory File object
-    virtual_file = mkdocs.structure.files.File(
-        path="publications.md",
-        src_dir=config["docs_dir"],
-        dest_dir=config["site_dir"],
-        use_directory_urls=config["use_directory_urls"],
-    )
-
-    # Return a new Files container that includes our virtual file
-    return mkdocs.structure.files.Files(list(files) + [virtual_file])
-
-
-def on_page_read_source(
-    page: mkdocs.structure.pages.Page,
-    config: mkdocs.config.Config,
-):
-    """
-    Provide the markdown content for our virtual page when MkDocs asks for it.
-    """
-    return VIRTUAL_FILES.get(page.file.src_path)
-
-
 if __name__ == "__main__":
-    # For testing purposes, we can run this script directly to generate the page
     from pathlib import Path
 
-    # Assuming the script is run from the root of the MkDocs project
     docs_dir = Path("docs")
     bib_path = docs_dir / "references.bib"
     content = _build_publications(bib_path)
