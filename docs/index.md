@@ -34,6 +34,8 @@ Since 2024, I’ve also been serving as the AI advisor for AP-HP’s Digital Ser
 
 My work focuses on medical text mining, structured prediction models, and developing practical AI-driven tools, such as pseudonymization solutions and large-scale information extraction pipelines, to support healthcare research and enhance patient care. I’m also passionate about open-source software and designing UI/UX that’s friendly to both users and developers.
 
+On this website, you will find my [publications](/publications), published [software](/software), recent [talks](/talks) as well as some [job offers](/job-offers) in the team I'm currently working in at AP-HP.
+
 === card
     **Current position:** NLP engineer at AP-HP   
     **Contact:** perceval.wajsburt[at]aphp[dot]fr   
